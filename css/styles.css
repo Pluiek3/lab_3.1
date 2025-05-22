@@ -75,3 +75,15 @@ input[type="time"]:focus {
 .submit-btn:hover {
     background-color: #2980b9;
 }
+
+#result {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#comment {
+    color: #6c757d;
+    margin-top: 10px;
+}

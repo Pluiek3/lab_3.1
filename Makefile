@@ -1,6 +1,6 @@
 # Компилятор и флаги
 CC = gcc
-CFLAGS = -I./include -I./mongoose -Wall -Wextra -pthread -DMG_ENABLE_HTTP=1
+CFLAGS = -I./include -I./mongoose -Wall -Wextra -pthread -DMG_ENABLE_HTTP=1 -DMG_ENABLE_FILES=1
 DEBUG_CFLAGS = -g -O0
 RELEASE_CFLAGS = -O2 -DNDEBUG
 
@@ -12,7 +12,7 @@ else
 endif
 
 # Исходные файлы
-SRC = src/main.c src/http_handler.c src/responses.c src/sleep_logic.c src/time_utils.c
+SRC = src/main.c src/http_handler.c src/sleep_logic.c src/time_utils.c
 OBJ = $(SRC:.c=.o)
 DEP = $(SRC:.c=.d)
 
@@ -54,7 +54,8 @@ $(MG_OBJ): $(MG_PATH)/mongoose.c $(MG_PATH)/mongoose.h
 # Копирование ресурсов
 copy-resources: $(RESOURCES)
 	@mkdir -p bin/css bin/templates
-	@cp -f $(RESOURCES) bin/
+	@cp -f css/styles.css bin/css/
+	@cp -f templates/sleep.html bin/templates/
 
 # Очистка
 clean:

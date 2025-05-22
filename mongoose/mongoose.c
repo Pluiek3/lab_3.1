@@ -1655,7 +1655,7 @@ static bool vcb(uint8_t c) {
 static size_t clen(const char *s, const char *end) {
   const unsigned char *u = (unsigned char *) s, c = *u;
   long n = (long) (end - s);
-  if (c > ' ' && c < '~') return 1;  // Usual ascii printed char
+  if (c > ' ' && c <= '~') return 1;  // Usual ascii printed char
   if ((c & 0xe0) == 0xc0 && n > 1 && vcb(u[1])) return 2;  // 2-byte UTF8
   if ((c & 0xf0) == 0xe0 && n > 2 && vcb(u[1]) && vcb(u[2])) return 3;
   if ((c & 0xf8) == 0xf0 && n > 3 && vcb(u[1]) && vcb(u[2]) && vcb(u[3]))
@@ -19786,6 +19786,7 @@ int mg_check_ip_acl(struct mg_str acl, struct mg_addr *remote_ip) {
 bool mg_path_is_sane(const struct mg_str path) {
   const char *s = path.buf;
   size_t n = path.len;
+  if (path.buf[0] == '~') return false;  // Starts with ~
   if (path.buf[0] == '.' && path.buf[1] == '.') return false;  // Starts with ..
   for (; s[0] != '\0' && n > 0; s++, n--) {
     if ((s[0] == '/' || s[0] == '\\') && n >= 2) {   // Subdir?

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор сна</title>
-    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div class="container">
@@ -20,21 +20,36 @@
             </div>
             <button type="submit" class="submit-btn">Рассчитать</button>
         </form>
+        
+        <div id="result" style="margin-top: 20px; display: none;">
+            <h3>Результат:</h3>
+            <p id="duration"></p>
+            <p id="comment" style="font-style: italic;"></p>
+        </div>
     </div>
 
     <script>
-        document.getElementById('sleepForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const bedtime = document.getElementById('bedtime').value;
-    const waketime = document.getElementById('waketime').value;
-    
-    fetch(`/calculate?bedtime=${bedtime}&waketime=${waketime}`)
-        .then(response => response.json())
-        .then(data => {
-            alert(`Вы спали ${data.hours} часов ${data.minutes} минут. ${data.comment}`);
-        })
-        .catch(error => console.error('Ошибка:', error));
-});
+        document.getElementById('sleepForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const params = new URLSearchParams(formData);
+            
+            try {
+                const response = await fetch(`/calculate?${params}`);
+                if (!response.ok) throw new Error('Ошибка сервера');
+                
+                const data = await response.json();
+                
+                document.getElementById('duration').textContent = 
+                    `Вы спали: ${data.hours} ч ${data.minutes} мин`;
+                document.getElementById('comment').textContent = data.comment;
+                document.getElementById('result').style.display = 'block';
+                
+            } catch (error) {
+                alert('Ошибка при расчете: ' + error.message);
+            }
+        });
     </script>
 </body>
 </html>
