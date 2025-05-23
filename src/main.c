@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-static void fn(struct mg_connection *c, int ev, void *ev_data) {
+static void fn(struct mg_connection *c, 
+               int ev, void *ev_data) {
     if (ev == MG_EV_HTTP_MSG) {
         handle_request(c, (struct mg_http_message *)ev_data);
     }

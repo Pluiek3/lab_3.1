@@ -14,7 +14,7 @@ int time_to_minutes(Time t) {
 
 Time minutes_to_time(int total_minutes) {
     Time t;
-    t.hours = (total_minutes / 60) % 24;
+    t.hours   = (total_minutes / 60) % 24;
     t.minutes = total_minutes % 60;
     return t;
 }

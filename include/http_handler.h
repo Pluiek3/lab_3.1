@@ -7,6 +7,7 @@
 // Параметры:
 // c - указатель на соединение
 // hm - указатель на HTTP-сообщение
-void handle_request(struct mg_connection *c, struct mg_http_message *hm);
+void handle_request(struct mg_connection *c, 
+                    struct mg_http_message *hm);
 
 #endif // HTTP_HANDLER_H
