@@ -1,0 +1,21 @@
+<map id="src/http_handler.c" name="src/http_handler.c">
+<area shape="rect" id="Node000001" title="Обработчик HTTP&#45;запросов для сервиса анализа сна" alt="" coords="414,5,551,31"/>
+<area shape="rect" id="Node000002" href="$mongoose_8h_source.html" title=" " alt="" coords="5,152,192,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="414,21,320,24,214,32,164,40,120,50,85,64,62,80,56,94,59,109,79,141,75,143,54,111,51,93,58,77,82,59,118,45,163,34,213,27,319,18,414,16"/>
+<area shape="rect" id="Node000004" href="$http__handler_8h.html" title="Интерфейс обработчика HTTP&#45;запросов для сервиса анализа сна" alt="" coords="72,79,251,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="432,33,227,78,226,73,430,28"/>
+<area shape="rect" id="Node000005" href="$sleep__logic_8h.html" title="Заголовочный файл для модуля анализа сна" alt="" coords="275,79,445,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="464,33,393,74,390,69,462,28"/>
+<area shape="rect" id="Node000006" href="$time__utils_8h.html" title="Заголовочный файл утилит для работы со временем" alt="" coords="372,152,471,177"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="483,32,474,65,460,105,439,142,435,139,455,103,469,64,478,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="520,79,587,104"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="496,29,534,67,530,71,492,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="611,79,682,104"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="510,28,609,71,606,76,508,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="707,79,789,104"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="526,28,694,73,692,78,525,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="25,225,173,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,178,101,212,96,212,96,178"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="153,106,120,143,116,140,149,103"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="372,103,404,140,400,143,368,106"/>
+</map>

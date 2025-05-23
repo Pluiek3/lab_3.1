@@ -1,0 +1,37 @@
+\doxysection{Пример}
+\hypertarget{_xD0_x9F_xD1_x80_xD0_xB8_xD0_xBC_xD0_xB5_xD1_x80-example}{}\label{_xD0_x9F_xD1_x80_xD0_xB8_xD0_xBC_xD0_xB5_xD1_x80-example}Основная функция обработки HTTP-\/запросов
+
+Основная функция обработки HTTP-\/запросов 
+\begin{DoxyParams}{Аргументы}
+{\em c} & Объект соединения Mongoose \\
+\hline
+{\em hm} & Разобранное HTTP-\/сообщение\\
+\hline
+\end{DoxyParams}
+Данная функция обрабатывает все входящие HTTP-\/запросы и перенаправляет их на\+:
+\begin{DoxyItemize}
+\item Отдачу статических файлов (HTML, CSS)
+\item API расчета сна
+\item Обработку ошибок
+\end{DoxyItemize}
+
+Поддерживаемые маршруты\+:
+\begin{DoxyItemize}
+\item GET / → отдает sleep.\+html
+\item GET /calculate?bedtime=ЧЧ\+:ММ\&waketime=ЧЧ\+:ММ → API расчета сна
+\item GET /styles.css → отдает CSS-\/файл
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Заметки}
+Обработчик должен быть зарегистрирован в Mongoose с помощью mg\+\_\+http\+\_\+listen()
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+Сам обработчик не является потокобезопасным -\/ Mongoose должен обрабатывать все аспекты многопоточности/синхронизации
+\end{DoxyWarning}
+регистрации обработчика\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }\mbox{\hyperlink{structmg__mgr}{mg\_mgr}}\ mgr;}
+\DoxyCodeLine{mg\_mgr\_init(\&mgr);}
+\DoxyCodeLine{mg\_http\_listen(\&mgr,\ \textcolor{stringliteral}{"{}http://0.0.0.0:8000"{}},\ handle\_request,\ NULL);}
+
+\end{DoxyCode}

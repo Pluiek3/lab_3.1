@@ -1,0 +1,26 @@
+\doxysection{sleep\+\_\+logic.\+h}
+\hypertarget{sleep__logic_8h_source}{}\label{sleep__logic_8h_source}\index{include/sleep\_logic.h@{include/sleep\_logic.h}}
+\mbox{\hyperlink{sleep__logic_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ SLEEP\_LOGIC\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ SLEEP\_LOGIC\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{time__utils_8h}{time\_utils.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{structTime}{Time}}\ \mbox{\hyperlink{structSleepData_aef4657d56e7ef50185c66675a8af5e73}{bedtime}};\ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structTime}{Time}}\ \mbox{\hyperlink{structSleepData_ac25397e4730f81526ac45bf4fe4ba53c}{waketime}};\ }
+\DoxyCodeLine{00022\ \}\ \mbox{\hyperlink{structSleepData}{SleepData}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSleepResult_aae1244133424e8b9d0c2b6dfe15d16a1}{hours}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSleepResult_afd340fdb47244e30108c125d567ad875}{minutes}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structSleepResult_a585c476ca9ddefc2c06763597949b0a2}{comment}};\ }
+\DoxyCodeLine{00033\ \}\ \mbox{\hyperlink{structSleepResult}{SleepResult}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00055\ \mbox{\hyperlink{structSleepResult}{SleepResult}}\ \mbox{\hyperlink{sleep__logic_8h_a4cd4d975103028cddd1dd7272455d37a}{calculate\_sleep}}(\mbox{\hyperlink{structSleepData}{SleepData}}\ data);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ SLEEP\_LOGIC\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,116 @@
+\doxysection{Файл src/time\+\_\+utils.c}
+\hypertarget{time__utils_8c}{}\label{time__utils_8c}\index{src/time\_utils.c@{src/time\_utils.c}}
+
+
+Реализация утилит для работы со временем  
+
+
+{\ttfamily \#include "{}../include/time\+\_\+utils.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Граф включаемых заголовочных файлов для time\+\_\+utils.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{time__utils_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structTime}{Time}} \mbox{\hyperlink{time__utils_8c_a4255bc301d3c9ed72d9772efe1dd13f6}{parse\+\_\+time}} (const char \texorpdfstring{$\ast$}{*}time\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Парсит строку времени в формате HH\+:MM в структуру \doxylink{structTime}{Time}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{time__utils_8c_aa0687440185d667a7f05f295db537c7e}{time\+\_\+to\+\_\+minutes}} (\mbox{\hyperlink{structTime}{Time}} t)
+\begin{DoxyCompactList}\small\item\em Конвертирует структуру \doxylink{structTime}{Time} в общее количество минут \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structTime}{Time}} \mbox{\hyperlink{time__utils_8c_a982eab0515da786a59115a416b93ee0e}{minutes\+\_\+to\+\_\+time}} (int total\+\_\+minutes)
+\begin{DoxyCompactList}\small\item\em Конвертирует минуты в структуру \doxylink{structTime}{Time}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация утилит для работы со временем 
+
+Модуль предоставляет функции для конвертации и парсинга времени 
+
+\doxysubsection{Функции}
+\Hypertarget{time__utils_8c_a982eab0515da786a59115a416b93ee0e}\label{time__utils_8c_a982eab0515da786a59115a416b93ee0e} 
+\index{time\_utils.c@{time\_utils.c}!minutes\_to\_time@{minutes\_to\_time}}
+\index{minutes\_to\_time@{minutes\_to\_time}!time\_utils.c@{time\_utils.c}}
+\doxysubsubsection{\texorpdfstring{minutes\_to\_time()}{minutes\_to\_time()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTime}{Time}} minutes\+\_\+to\+\_\+time (\begin{DoxyParamCaption}\item[{int}]{total\+\_\+minutes }\end{DoxyParamCaption})}
+
+
+
+Конвертирует минуты в структуру \doxylink{structTime}{Time}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em total\+\_\+minutes} & Общее количество минут \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\doxylink{structTime}{Time} Структура с часами и минутами
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Выполняет нормализацию часов (значение часов будет в диапазоне 0-\/23)
+\end{DoxyNote}
+Пример использования\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{structTime}{Time}}\ t\ =\ \mbox{\hyperlink{time__utils_8h_a982eab0515da786a59115a416b93ee0e}{minutes\_to\_time}}(1470);\ \textcolor{comment}{//\ 24*60\ +\ 30}}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}\%02d:\%02d"{}},\ t.\mbox{\hyperlink{structTime_aa207ff7d820b4c32f22e1474a931b195}{hours}},\ t.\mbox{\hyperlink{structTime_acdca8b13b904057dfec90b68f3092bc4}{minutes}});\ \textcolor{comment}{//\ Выведет\ "{}00:30"{}}}
+
+\end{DoxyCode}
+ \Hypertarget{time__utils_8c_a4255bc301d3c9ed72d9772efe1dd13f6}\label{time__utils_8c_a4255bc301d3c9ed72d9772efe1dd13f6} 
+\index{time\_utils.c@{time\_utils.c}!parse\_time@{parse\_time}}
+\index{parse\_time@{parse\_time}!time\_utils.c@{time\_utils.c}}
+\doxysubsubsection{\texorpdfstring{parse\_time()}{parse\_time()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTime}{Time}} parse\+\_\+time (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{time\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Парсит строку времени в формате HH\+:MM в структуру \doxylink{structTime}{Time}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em time\+\_\+str} & Строка времени в формате "{}\+HH\+:\+MM"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\doxylink{structTime}{Time} Структура с распарсенным временем
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Не выполняет валидацию формата входной строки 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+При неверном формате строки поведение не определено
+\end{DoxyWarning}
+Пример использования\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{structTime}{Time}}\ t\ =\ \mbox{\hyperlink{time__utils_8h_a4255bc301d3c9ed72d9772efe1dd13f6}{parse\_time}}(\textcolor{stringliteral}{"{}23:45"{}});}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}\%02d:\%02d"{}},\ t.\mbox{\hyperlink{structTime_aa207ff7d820b4c32f22e1474a931b195}{hours}},\ t.\mbox{\hyperlink{structTime_acdca8b13b904057dfec90b68f3092bc4}{minutes}});\ \textcolor{comment}{//\ Выведет\ "{}23:45"{}}}
+
+\end{DoxyCode}
+ \Hypertarget{time__utils_8c_aa0687440185d667a7f05f295db537c7e}\label{time__utils_8c_aa0687440185d667a7f05f295db537c7e} 
+\index{time\_utils.c@{time\_utils.c}!time\_to\_minutes@{time\_to\_minutes}}
+\index{time\_to\_minutes@{time\_to\_minutes}!time\_utils.c@{time\_utils.c}}
+\doxysubsubsection{\texorpdfstring{time\_to\_minutes()}{time\_to\_minutes()}}
+{\footnotesize\ttfamily int time\+\_\+to\+\_\+minutes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTime}{Time}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Конвертирует структуру \doxylink{structTime}{Time} в общее количество минут 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em t} & Структура \doxylink{structTime}{Time} для конвертации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int Общее количество минут (часы \texorpdfstring{$\ast$}{*} 60 + минуты)
+\end{DoxyReturn}
+Пример использования\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{structTime}{Time}}\ t\ =\ \{8,\ 30\};}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ mins\ =\ \mbox{\hyperlink{time__utils_8h_aa0687440185d667a7f05f295db537c7e}{time\_to\_minutes}}(t);\ \textcolor{comment}{//\ Вернет\ 510}}
+
+\end{DoxyCode}
+ 

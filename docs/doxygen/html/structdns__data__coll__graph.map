@@ -1,0 +1,20 @@
+<map id="dns_data" name="dns_data">
+<area shape="rect" id="Node000001" title=" " alt="" coords="173,244,254,269"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="270,248,281,257,272,265,255,267,254,262,270,260,275,257,267,252"/>
+<area shape="rect" id="Node000002" href="$structmg__connection.html" title=" " alt="" coords="337,147,458,172"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="364,181,237,246,234,242,362,176"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="473,149,481,153,485,160,476,168,459,172,458,166,474,164,479,159,477,157,471,154"/>
+<area shape="rect" id="Node000003" href="$structmg__mgr.html" title=" " alt="" coords="374,347,450,372"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="389,185,377,225,374,247,376,269,390,312,407,345,403,348,386,314,371,270,369,247,371,224,384,184"/>
+<area shape="rect" id="Node000004" href="$structmg__dns.html" title=" " alt="" coords="427,244,501,269"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="416,182,458,242,454,245,411,185"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="458,338,484,321,501,302,513,285,517,267,511,245,494,221,472,202,425,174,428,170,475,197,498,218,516,243,523,267,518,287,505,306,487,325,461,343"/>
+<area shape="poly" id="edge6_Node000003_Node000004" title=" " alt="" coords="454,283,420,348,416,345,449,280"/>
+<area shape="rect" id="Node000005" href="$structmg__timer.html" title=" " alt="" coords="5,244,91,269"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="103,270,375,345,373,350,102,276"/>
+<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="105,247,113,250,117,257,109,265,91,267,91,262,107,260,112,256,110,255,103,252"/>
+<area shape="rect" id="Node000006" href="$structmg__addr.html" title=" " alt="" coords="306,5,385,31"/>
+<area shape="poly" id="edge10_Node000002_Node000006" title=" " alt="" coords="357,42,396,146,391,147,352,44"/>
+<area shape="rect" id="Node000007" href="$structmg__iobuf.html" title=" " alt="" coords="409,5,492,31"/>
+<area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="444,44,404,147,399,146,439,42"/>
+</map>

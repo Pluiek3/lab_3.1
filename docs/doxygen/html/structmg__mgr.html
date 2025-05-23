@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab_3: Структура mg_mgr</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab_3<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">UI Web Applications</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="structmg__mgr-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Структура mg_mgr</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф связей класса mg_mgr:</div>
+<div class="dyncontent">
+<div class="center"><img src="structmg__mgr__coll__graph.png" border="0" usemap="#amg__mgr_coll__map" alt="Collaboration graph"/></div>
+<map name="amg__mgr_coll__map" id="amg__mgr_coll__map">
+<area shape="rect" title=" " alt="" coords="236,93,312,119"/>
+<area shape="rect" href="structmg__connection.html" title=" " alt="" coords="113,235,235,260"/>
+<area shape="poly" title=" " alt="" coords="232,127,211,144,202,161,193,186,179,235,174,234,188,184,197,159,207,141,229,123"/>
+<area shape="poly" title=" " alt="" coords="211,226,228,214,243,200,255,179,263,157,270,118,276,119,268,159,259,182,247,203,232,218,215,230"/>
+<area shape="poly" title=" " alt="" coords="249,237,258,241,261,248,253,256,235,260,234,254,251,252,256,247,254,245,247,242"/>
+<area shape="rect" href="structmg__dns.html" title=" " alt="" coords="219,332,292,357"/>
+<area shape="poly" title=" " alt="" coords="195,269,247,330,243,333,191,272"/>
+<area shape="rect" href="structmg__addr.html" title=" " alt="" coords="5,93,84,119"/>
+<area shape="poly" title=" " alt="" coords="61,129,85,164,116,199,157,232,154,236,112,203,81,167,57,132"/>
+<area shape="rect" href="structmg__iobuf.html" title=" " alt="" coords="109,93,191,119"/>
+<area shape="poly" title=" " alt="" coords="150,133,149,165,154,201,169,233,164,236,149,202,144,166,145,133"/>
+<area shape="poly" title=" " alt="" coords="269,320,298,268,309,236,314,201,319,171,319,159,314,144,305,131,293,121,296,117,309,127,319,141,324,158,325,171,319,202,314,237,303,270,274,322"/>
+<area shape="rect" href="structmg__timer.html" title=" " alt="" coords="231,5,317,31"/>
+<area shape="poly" title=" " alt="" coords="277,45,277,93,271,93,271,45"/>
+<area shape="poly" title=" " alt="" coords="331,9,339,12,343,18,335,26,317,29,317,23,333,21,338,18,336,16,329,14"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aea4abe9c820acf0e0bbb54593cf3244b" id="r_aea4abe9c820acf0e0bbb54593cf3244b"><td class="memItemLeft" align="right" valign="top"><a id="aea4abe9c820acf0e0bbb54593cf3244b" name="aea4abe9c820acf0e0bbb54593cf3244b"></a>
+struct <a class="el" href="structmg__connection.html">mg_connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>conns</b></td></tr>
+<tr class="separator:aea4abe9c820acf0e0bbb54593cf3244b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3326e4d2a9f1537ad683f85d7536bee8" id="r_a3326e4d2a9f1537ad683f85d7536bee8"><td class="memItemLeft" align="right" valign="top"><a id="a3326e4d2a9f1537ad683f85d7536bee8" name="a3326e4d2a9f1537ad683f85d7536bee8"></a>
+struct <a class="el" href="structmg__dns.html">mg_dns</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dns4</b></td></tr>
+<tr class="separator:a3326e4d2a9f1537ad683f85d7536bee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746840f07c9c0b48aa55e32c4935c127" id="r_a746840f07c9c0b48aa55e32c4935c127"><td class="memItemLeft" align="right" valign="top"><a id="a746840f07c9c0b48aa55e32c4935c127" name="a746840f07c9c0b48aa55e32c4935c127"></a>
+struct <a class="el" href="structmg__dns.html">mg_dns</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dns6</b></td></tr>
+<tr class="separator:a746840f07c9c0b48aa55e32c4935c127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc74db7181a32d78a598fa0d7e2b9d8" id="r_a6fc74db7181a32d78a598fa0d7e2b9d8"><td class="memItemLeft" align="right" valign="top"><a id="a6fc74db7181a32d78a598fa0d7e2b9d8" name="a6fc74db7181a32d78a598fa0d7e2b9d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dnstimeout</b></td></tr>
+<tr class="separator:a6fc74db7181a32d78a598fa0d7e2b9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ffa7ee2ab4325250d983fb0fcd1bd5" id="r_a85ffa7ee2ab4325250d983fb0fcd1bd5"><td class="memItemLeft" align="right" valign="top"><a id="a85ffa7ee2ab4325250d983fb0fcd1bd5" name="a85ffa7ee2ab4325250d983fb0fcd1bd5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>use_dns6</b></td></tr>
+<tr class="separator:a85ffa7ee2ab4325250d983fb0fcd1bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5767d57547d9ca7c653596a56f0b237a" id="r_a5767d57547d9ca7c653596a56f0b237a"><td class="memItemLeft" align="right" valign="top"><a id="a5767d57547d9ca7c653596a56f0b237a" name="a5767d57547d9ca7c653596a56f0b237a"></a>
+unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>nextid</b></td></tr>
+<tr class="separator:a5767d57547d9ca7c653596a56f0b237a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb027058e971d541651d6efd9a69a2b" id="r_afcb027058e971d541651d6efd9a69a2b"><td class="memItemLeft" align="right" valign="top"><a id="afcb027058e971d541651d6efd9a69a2b" name="afcb027058e971d541651d6efd9a69a2b"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>userdata</b></td></tr>
+<tr class="separator:afcb027058e971d541651d6efd9a69a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06fbb0aecc42c741c53bbb54209f3a0" id="r_af06fbb0aecc42c741c53bbb54209f3a0"><td class="memItemLeft" align="right" valign="top"><a id="af06fbb0aecc42c741c53bbb54209f3a0" name="af06fbb0aecc42c741c53bbb54209f3a0"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>tls_ctx</b></td></tr>
+<tr class="separator:af06fbb0aecc42c741c53bbb54209f3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9ebbee6362adf1d6d37016e9942246" id="r_a1b9ebbee6362adf1d6d37016e9942246"><td class="memItemLeft" align="right" valign="top"><a id="a1b9ebbee6362adf1d6d37016e9942246" name="a1b9ebbee6362adf1d6d37016e9942246"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>mqtt_id</b></td></tr>
+<tr class="separator:a1b9ebbee6362adf1d6d37016e9942246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6a30dc5f872bfde3a0c4fd362efbd2" id="r_a6c6a30dc5f872bfde3a0c4fd362efbd2"><td class="memItemLeft" align="right" valign="top"><a id="a6c6a30dc5f872bfde3a0c4fd362efbd2" name="a6c6a30dc5f872bfde3a0c4fd362efbd2"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>active_dns_requests</b></td></tr>
+<tr class="separator:a6c6a30dc5f872bfde3a0c4fd362efbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeba7cbcb7d4d59e1ebf5922e7e15a20" id="r_adeba7cbcb7d4d59e1ebf5922e7e15a20"><td class="memItemLeft" align="right" valign="top"><a id="adeba7cbcb7d4d59e1ebf5922e7e15a20" name="adeba7cbcb7d4d59e1ebf5922e7e15a20"></a>
+struct <a class="el" href="structmg__timer.html">mg_timer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>timers</b></td></tr>
+<tr class="separator:adeba7cbcb7d4d59e1ebf5922e7e15a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b7250d3c05391b13cc19ed4bdb820c" id="r_ad4b7250d3c05391b13cc19ed4bdb820c"><td class="memItemLeft" align="right" valign="top"><a id="ad4b7250d3c05391b13cc19ed4bdb820c" name="ad4b7250d3c05391b13cc19ed4bdb820c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>epoll_fd</b></td></tr>
+<tr class="separator:ad4b7250d3c05391b13cc19ed4bdb820c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f181d31cf9784559fa287e0dd3633d" id="r_a28f181d31cf9784559fa287e0dd3633d"><td class="memItemLeft" align="right" valign="top"><a id="a28f181d31cf9784559fa287e0dd3633d" name="a28f181d31cf9784559fa287e0dd3633d"></a>
+struct mg_tcpip_if *&#160;</td><td class="memItemRight" valign="bottom"><b>ifp</b></td></tr>
+<tr class="separator:a28f181d31cf9784559fa287e0dd3633d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2acff58c906da8e8e699b3c5cb63dad2" id="r_a2acff58c906da8e8e699b3c5cb63dad2"><td class="memItemLeft" align="right" valign="top"><a id="a2acff58c906da8e8e699b3c5cb63dad2" name="a2acff58c906da8e8e699b3c5cb63dad2"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>extraconnsize</b></td></tr>
+<tr class="separator:a2acff58c906da8e8e699b3c5cb63dad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7c323e2b53221bfe447e34393603f0" id="r_abf7c323e2b53221bfe447e34393603f0"><td class="memItemLeft" align="right" valign="top"><a id="abf7c323e2b53221bfe447e34393603f0" name="abf7c323e2b53221bfe447e34393603f0"></a>
+MG_SOCKET_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>pipe</b></td></tr>
+<tr class="separator:abf7c323e2b53221bfe447e34393603f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><dl class="section examples"><dt>Примеры</dt><dd><a class="el" href="_xD0_x9F_xD1_x80_xD0_xB8_xD0_xBC_xD0_xB5_xD1_x80-example.html#_a0">Пример</a>.</dd>
+</dl>
+</div><hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>mongoose/<a class="el" href="mongoose_8h_source.html">mongoose.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

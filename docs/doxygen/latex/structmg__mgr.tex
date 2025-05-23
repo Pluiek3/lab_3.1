@@ -1,0 +1,70 @@
+\doxysection{Структура mg\+\_\+mgr}
+\hypertarget{structmg__mgr}{}\label{structmg__mgr}\index{mg\_mgr@{mg\_mgr}}
+
+
+Граф связей класса mg\+\_\+mgr\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structmg__mgr__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmg__mgr_aea4abe9c820acf0e0bbb54593cf3244b}\label{structmg__mgr_aea4abe9c820acf0e0bbb54593cf3244b} 
+struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*} {\bfseries conns}
+\item 
+\Hypertarget{structmg__mgr_a3326e4d2a9f1537ad683f85d7536bee8}\label{structmg__mgr_a3326e4d2a9f1537ad683f85d7536bee8} 
+struct \mbox{\hyperlink{structmg__dns}{mg\+\_\+dns}} {\bfseries dns4}
+\item 
+\Hypertarget{structmg__mgr_a746840f07c9c0b48aa55e32c4935c127}\label{structmg__mgr_a746840f07c9c0b48aa55e32c4935c127} 
+struct \mbox{\hyperlink{structmg__dns}{mg\+\_\+dns}} {\bfseries dns6}
+\item 
+\Hypertarget{structmg__mgr_a6fc74db7181a32d78a598fa0d7e2b9d8}\label{structmg__mgr_a6fc74db7181a32d78a598fa0d7e2b9d8} 
+int {\bfseries dnstimeout}
+\item 
+\Hypertarget{structmg__mgr_a85ffa7ee2ab4325250d983fb0fcd1bd5}\label{structmg__mgr_a85ffa7ee2ab4325250d983fb0fcd1bd5} 
+bool {\bfseries use\+\_\+dns6}
+\item 
+\Hypertarget{structmg__mgr_a5767d57547d9ca7c653596a56f0b237a}\label{structmg__mgr_a5767d57547d9ca7c653596a56f0b237a} 
+unsigned long {\bfseries nextid}
+\item 
+\Hypertarget{structmg__mgr_afcb027058e971d541651d6efd9a69a2b}\label{structmg__mgr_afcb027058e971d541651d6efd9a69a2b} 
+void \texorpdfstring{$\ast$}{*} {\bfseries userdata}
+\item 
+\Hypertarget{structmg__mgr_af06fbb0aecc42c741c53bbb54209f3a0}\label{structmg__mgr_af06fbb0aecc42c741c53bbb54209f3a0} 
+void \texorpdfstring{$\ast$}{*} {\bfseries tls\+\_\+ctx}
+\item 
+\Hypertarget{structmg__mgr_a1b9ebbee6362adf1d6d37016e9942246}\label{structmg__mgr_a1b9ebbee6362adf1d6d37016e9942246} 
+uint16\+\_\+t {\bfseries mqtt\+\_\+id}
+\item 
+\Hypertarget{structmg__mgr_a6c6a30dc5f872bfde3a0c4fd362efbd2}\label{structmg__mgr_a6c6a30dc5f872bfde3a0c4fd362efbd2} 
+void \texorpdfstring{$\ast$}{*} {\bfseries active\+\_\+dns\+\_\+requests}
+\item 
+\Hypertarget{structmg__mgr_adeba7cbcb7d4d59e1ebf5922e7e15a20}\label{structmg__mgr_adeba7cbcb7d4d59e1ebf5922e7e15a20} 
+struct \mbox{\hyperlink{structmg__timer}{mg\+\_\+timer}} \texorpdfstring{$\ast$}{*} {\bfseries timers}
+\item 
+\Hypertarget{structmg__mgr_ad4b7250d3c05391b13cc19ed4bdb820c}\label{structmg__mgr_ad4b7250d3c05391b13cc19ed4bdb820c} 
+int {\bfseries epoll\+\_\+fd}
+\item 
+\Hypertarget{structmg__mgr_a28f181d31cf9784559fa287e0dd3633d}\label{structmg__mgr_a28f181d31cf9784559fa287e0dd3633d} 
+struct mg\+\_\+tcpip\+\_\+if \texorpdfstring{$\ast$}{*} {\bfseries ifp}
+\item 
+\Hypertarget{structmg__mgr_a2acff58c906da8e8e699b3c5cb63dad2}\label{structmg__mgr_a2acff58c906da8e8e699b3c5cb63dad2} 
+size\+\_\+t {\bfseries extraconnsize}
+\item 
+\Hypertarget{structmg__mgr_abf7c323e2b53221bfe447e34393603f0}\label{structmg__mgr_abf7c323e2b53221bfe447e34393603f0} 
+MG\+\_\+\+SOCKET\+\_\+\+TYPE {\bfseries pipe}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+\begin{Desc}
+\item[Примеры]\par
+\mbox{\hyperlink{_xD0_x9F_xD1_x80_xD0_xB8_xD0_xBC_xD0_xB5_xD1_x80-example}{Пример}}.\end{Desc}
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mongoose/mongoose.\+h\end{DoxyCompactItemize}

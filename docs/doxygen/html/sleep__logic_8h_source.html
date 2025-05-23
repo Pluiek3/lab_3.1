@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab_3: Исходный файл include/sleep_logic.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab_3<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">UI Web Applications</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">sleep_logic.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="sleep__logic_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef SLEEP_LOGIC_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define SLEEP_LOGIC_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="time__utils_8h.html">time_utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structSleepData.html">   19</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structSleepData.html#aef4657d56e7ef50185c66675a8af5e73">   20</a></span>    <a class="code hl_struct" href="structTime.html">Time</a> <a class="code hl_variable" href="structSleepData.html#aef4657d56e7ef50185c66675a8af5e73">bedtime</a>;  </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structSleepData.html#ac25397e4730f81526ac45bf4fe4ba53c">   21</a></span>    <a class="code hl_struct" href="structTime.html">Time</a> <a class="code hl_variable" href="structSleepData.html#ac25397e4730f81526ac45bf4fe4ba53c">waketime</a>; </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <a class="code hl_struct" href="structSleepData.html">SleepData</a>;</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structSleepResult.html">   29</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structSleepResult.html#aae1244133424e8b9d0c2b6dfe15d16a1">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structSleepResult.html#aae1244133424e8b9d0c2b6dfe15d16a1">hours</a>;           </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structSleepResult.html#afd340fdb47244e30108c125d567ad875">   31</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structSleepResult.html#afd340fdb47244e30108c125d567ad875">minutes</a>;         </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structSleepResult.html#a585c476ca9ddefc2c06763597949b0a2">   32</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="structSleepResult.html#a585c476ca9ddefc2c06763597949b0a2">comment</a>; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} <a class="code hl_struct" href="structSleepResult.html">SleepResult</a>;</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><a class="code hl_struct" href="structSleepResult.html">SleepResult</a> <a class="code hl_function" href="sleep__logic_8h.html#a4cd4d975103028cddd1dd7272455d37a">calculate_sleep</a>(<a class="code hl_struct" href="structSleepData.html">SleepData</a> data);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif </span><span class="comment">/* SLEEP_LOGIC_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="asleep__logic_8h_html_a4cd4d975103028cddd1dd7272455d37a"><div class="ttname"><a href="sleep__logic_8h.html#a4cd4d975103028cddd1dd7272455d37a">calculate_sleep</a></div><div class="ttdeci">SleepResult calculate_sleep(SleepData data)</div><div class="ttdoc">Основная функция анализа сна</div><div class="ttdef"><b>Definition</b> sleep_logic.c:40</div></div>
+<div class="ttc" id="astructSleepData_html"><div class="ttname"><a href="structSleepData.html">SleepData</a></div><div class="ttdoc">Структура данных о времени сна</div><div class="ttdef"><b>Definition</b> sleep_logic.h:19</div></div>
+<div class="ttc" id="astructSleepData_html_ac25397e4730f81526ac45bf4fe4ba53c"><div class="ttname"><a href="structSleepData.html#ac25397e4730f81526ac45bf4fe4ba53c">SleepData::waketime</a></div><div class="ttdeci">Time waketime</div><div class="ttdoc">Время пробуждения в формате Time (часы:минуты)</div><div class="ttdef"><b>Definition</b> sleep_logic.h:21</div></div>
+<div class="ttc" id="astructSleepData_html_aef4657d56e7ef50185c66675a8af5e73"><div class="ttname"><a href="structSleepData.html#aef4657d56e7ef50185c66675a8af5e73">SleepData::bedtime</a></div><div class="ttdeci">Time bedtime</div><div class="ttdoc">Время отхода ко сну в формате Time (часы:минуты)</div><div class="ttdef"><b>Definition</b> sleep_logic.h:20</div></div>
+<div class="ttc" id="astructSleepResult_html"><div class="ttname"><a href="structSleepResult.html">SleepResult</a></div><div class="ttdoc">Структура результатов анализа сна</div><div class="ttdef"><b>Definition</b> sleep_logic.h:29</div></div>
+<div class="ttc" id="astructSleepResult_html_a585c476ca9ddefc2c06763597949b0a2"><div class="ttname"><a href="structSleepResult.html#a585c476ca9ddefc2c06763597949b0a2">SleepResult::comment</a></div><div class="ttdeci">const char * comment</div><div class="ttdoc">Текстовая оценка качества сна (не управляется пользователем)</div><div class="ttdef"><b>Definition</b> sleep_logic.h:32</div></div>
+<div class="ttc" id="astructSleepResult_html_aae1244133424e8b9d0c2b6dfe15d16a1"><div class="ttname"><a href="structSleepResult.html#aae1244133424e8b9d0c2b6dfe15d16a1">SleepResult::hours</a></div><div class="ttdeci">int hours</div><div class="ttdoc">Полные часы сна</div><div class="ttdef"><b>Definition</b> sleep_logic.h:30</div></div>
+<div class="ttc" id="astructSleepResult_html_afd340fdb47244e30108c125d567ad875"><div class="ttname"><a href="structSleepResult.html#afd340fdb47244e30108c125d567ad875">SleepResult::minutes</a></div><div class="ttdeci">int minutes</div><div class="ttdoc">Оставшиеся минуты сна</div><div class="ttdef"><b>Definition</b> sleep_logic.h:31</div></div>
+<div class="ttc" id="astructTime_html"><div class="ttname"><a href="structTime.html">Time</a></div><div class="ttdoc">Структура для представления времени (часы и минуты)</div><div class="ttdef"><b>Definition</b> time_utils.h:18</div></div>
+<div class="ttc" id="atime__utils_8h_html"><div class="ttname"><a href="time__utils_8h.html">time_utils.h</a></div><div class="ttdoc">Заголовочный файл утилит для работы со временем</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,40 @@
+\doxysection{Структура mg\+\_\+fs}
+\hypertarget{structmg__fs}{}\label{structmg__fs}\index{mg\_fs@{mg\_fs}}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structmg__fs_acef078be216a94b0b64ce4858a5d617d}\label{structmg__fs_acef078be216a94b0b64ce4858a5d617d} 
+int(\texorpdfstring{$\ast$}{*} {\bfseries st} )(const char \texorpdfstring{$\ast$}{*}path, size\+\_\+t \texorpdfstring{$\ast$}{*}size, time\+\_\+t \texorpdfstring{$\ast$}{*}mtime)
+\item 
+\Hypertarget{structmg__fs_ac1e13d44a61f2084b3ff91721c853084}\label{structmg__fs_ac1e13d44a61f2084b3ff91721c853084} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries ls} )(const char \texorpdfstring{$\ast$}{*}path, void(\texorpdfstring{$\ast$}{*}fn)(const char \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}), void \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{structmg__fs_adf332c3883b7c58638abdbceca052a09}\label{structmg__fs_adf332c3883b7c58638abdbceca052a09} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} {\bfseries op} )(const char \texorpdfstring{$\ast$}{*}path, int flags)
+\item 
+\Hypertarget{structmg__fs_ad201829b0e7912e55701f6d11ac75f13}\label{structmg__fs_ad201829b0e7912e55701f6d11ac75f13} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries cl} )(void \texorpdfstring{$\ast$}{*}fd)
+\item 
+\Hypertarget{structmg__fs_a2eaea2587bbd76629986d5d54908504d}\label{structmg__fs_a2eaea2587bbd76629986d5d54908504d} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries rd} )(void \texorpdfstring{$\ast$}{*}fd, void \texorpdfstring{$\ast$}{*}buf, size\+\_\+t len)
+\item 
+\Hypertarget{structmg__fs_a8f11bdd590377a733eaf4f992be12cd3}\label{structmg__fs_a8f11bdd590377a733eaf4f992be12cd3} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries wr} )(void \texorpdfstring{$\ast$}{*}fd, const void \texorpdfstring{$\ast$}{*}buf, size\+\_\+t len)
+\item 
+\Hypertarget{structmg__fs_ae3b3b01e47b5b3675f2aa1ec40629fb2}\label{structmg__fs_ae3b3b01e47b5b3675f2aa1ec40629fb2} 
+size\+\_\+t(\texorpdfstring{$\ast$}{*} {\bfseries sk} )(void \texorpdfstring{$\ast$}{*}fd, size\+\_\+t offset)
+\item 
+\Hypertarget{structmg__fs_ae95a408fa2149d8768d507a04e329e52}\label{structmg__fs_ae95a408fa2149d8768d507a04e329e52} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries mv} )(const char \texorpdfstring{$\ast$}{*}from, const char \texorpdfstring{$\ast$}{*}to)
+\item 
+\Hypertarget{structmg__fs_a94cd2111f5890709418a40bb744ea12b}\label{structmg__fs_a94cd2111f5890709418a40bb744ea12b} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries rm} )(const char \texorpdfstring{$\ast$}{*}path)
+\item 
+\Hypertarget{structmg__fs_a7cd1db459a25d238f473c0b6db9bc354}\label{structmg__fs_a7cd1db459a25d238f473c0b6db9bc354} 
+bool(\texorpdfstring{$\ast$}{*} {\bfseries mkd} )(const char \texorpdfstring{$\ast$}{*}path)
+\end{DoxyCompactItemize}
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mongoose/mongoose.\+h\end{DoxyCompactItemize}

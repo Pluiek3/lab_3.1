@@ -1,0 +1,30 @@
+<map id="printdirentrydata" name="printdirentrydata">
+<area shape="rect" id="Node000001" title=" " alt="" coords="443,380,575,405"/>
+<area shape="rect" id="Node000002" href="$structmg__connection.html" title=" " alt="" coords="239,283,361,308"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,311,405,339,487,378,485,382,403,344,339,316"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="375,285,384,289,387,296,379,304,361,308,360,302,377,300,382,295,380,293,373,290"/>
+<area shape="rect" id="Node000003" href="$structmg__mgr.html" title=" " alt="" coords="210,483,286,508"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="270,318,236,345,222,362,211,381,206,408,213,436,227,461,240,481,236,484,222,464,208,438,201,409,205,379,217,359,233,341,266,313"/>
+<area shape="rect" id="Node000004" href="$structmg__dns.html" title=" " alt="" coords="263,380,337,405"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="303,322,303,380,297,380,297,322"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="296,475,321,457,338,433,345,405,345,378,336,351,322,328,309,310,313,307,327,325,341,349,351,377,351,406,343,436,325,461,299,479"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="290,419,256,484,252,481,285,416"/>
+<area shape="rect" id="Node000005" href="$structmg__timer.html" title=" " alt="" coords="5,380,91,405"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="72,413,99,436,132,456,172,473,210,484,209,489,170,478,129,461,96,440,68,417"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="105,383,113,386,117,393,109,401,91,403,91,398,107,396,112,392,110,391,103,388"/>
+<area shape="rect" id="Node000006" href="$structmg__addr.html" title=" " alt="" coords="162,125,241,150"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="218,161,273,248,295,281,290,284,268,251,213,163"/>
+<area shape="rect" id="Node000007" href="$structmg__iobuf.html" title=" " alt="" coords="265,125,348,150"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="308,164,303,283,298,282,303,164"/>
+<area shape="rect" id="Node000008" href="$structmg__http__message.html" title=" " alt="" coords="438,283,581,308"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="512,322,512,380,507,380,507,322"/>
+<area shape="rect" id="Node000009" href="$structmg__str.html" title=" " alt="" coords="396,5,463,31"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="425,44,416,101,416,134,423,166,438,201,459,233,499,280,495,284,454,236,433,203,417,167,411,134,411,101,420,43"/>
+<area shape="rect" id="Node000010" href="$structmg__http__header.html" title=" " alt="" coords="492,125,620,150"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="454,38,545,122,542,126,450,42"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="551,164,515,283,510,282,546,162"/>
+<area shape="rect" id="Node000011" href="$structmg__http__serve__opts.html" title=" " alt="" coords="605,283,760,308"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="651,317,532,382,529,378,649,312"/>
+<area shape="rect" id="Node000012" href="$structmg__fs.html" title=" " alt="" coords="651,125,714,150"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="685,164,685,283,680,283,680,164"/>
+</map>

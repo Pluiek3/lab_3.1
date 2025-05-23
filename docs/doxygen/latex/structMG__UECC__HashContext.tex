@@ -1,0 +1,28 @@
+\doxysection{Структура MG\+\_\+\+UECC\+\_\+\+Hash\+Context}
+\hypertarget{structMG__UECC__HashContext}{}\label{structMG__UECC__HashContext}\index{MG\_UECC\_HashContext@{MG\_UECC\_HashContext}}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structMG__UECC__HashContext_a6091164f750b738ce74dd427a895086a}\label{structMG__UECC__HashContext_a6091164f750b738ce74dd427a895086a} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries init\+\_\+hash} )(const struct \mbox{\hyperlink{structMG__UECC__HashContext}{MG\+\_\+\+UECC\+\_\+\+Hash\+Context}} \texorpdfstring{$\ast$}{*}context)
+\item 
+\Hypertarget{structMG__UECC__HashContext_ab44fde8c699cebbaf8ca6e5dc86fdff4}\label{structMG__UECC__HashContext_ab44fde8c699cebbaf8ca6e5dc86fdff4} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries update\+\_\+hash} )(const struct \mbox{\hyperlink{structMG__UECC__HashContext}{MG\+\_\+\+UECC\+\_\+\+Hash\+Context}} \texorpdfstring{$\ast$}{*}context, const uint8\+\_\+t \texorpdfstring{$\ast$}{*}message, unsigned message\+\_\+size)
+\item 
+\Hypertarget{structMG__UECC__HashContext_ad82696bd566d7126e0a938c9ca9e2d40}\label{structMG__UECC__HashContext_ad82696bd566d7126e0a938c9ca9e2d40} 
+void(\texorpdfstring{$\ast$}{*} {\bfseries finish\+\_\+hash} )(const struct \mbox{\hyperlink{structMG__UECC__HashContext}{MG\+\_\+\+UECC\+\_\+\+Hash\+Context}} \texorpdfstring{$\ast$}{*}context, uint8\+\_\+t \texorpdfstring{$\ast$}{*}hash\+\_\+result)
+\item 
+\Hypertarget{structMG__UECC__HashContext_a09d673b46271d10ea8c6862b732af60e}\label{structMG__UECC__HashContext_a09d673b46271d10ea8c6862b732af60e} 
+unsigned {\bfseries block\+\_\+size}
+\item 
+\Hypertarget{structMG__UECC__HashContext_a37a1a51d83502a10a4b639ae5266c9fe}\label{structMG__UECC__HashContext_a37a1a51d83502a10a4b639ae5266c9fe} 
+unsigned {\bfseries result\+\_\+size}
+\item 
+\Hypertarget{structMG__UECC__HashContext_aebc320710ec582ae13636d23f1f27c9b}\label{structMG__UECC__HashContext_aebc320710ec582ae13636d23f1f27c9b} 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} {\bfseries tmp}
+\end{DoxyCompactItemize}
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+mongoose/mongoose.\+h\end{DoxyCompactItemize}

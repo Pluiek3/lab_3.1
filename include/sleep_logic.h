@@ -1,19 +1,57 @@
+/**
+ * @file sleep_logic.h
+ * @brief Заголовочный файл для модуля анализа сна
+ * 
+ * Модуль предоставляет функции для анализа продолжительности и качества сна
+ * на основе времени отхода ко сну и пробуждения.
+ */
+
 #ifndef SLEEP_LOGIC_H
 #define SLEEP_LOGIC_H
 
 #include "time_utils.h"
 
+/**
+ * @brief Структура данных о времени сна
+ * 
+ * Содержит информацию о времени отхода ко сну и времени пробуждения.
+ */
 typedef struct {
-    Time bedtime;
-    Time waketime;
+    Time bedtime;  ///< Время отхода ко сну в формате Time (часы:минуты)
+    Time waketime; ///< Время пробуждения в формате Time (часы:минуты)
 } SleepData;
 
+/**
+ * @brief Структура результатов анализа сна
+ * 
+ * Содержит рассчитанную продолжительность сна и текстовую оценку его качества.
+ */
 typedef struct {
-    int hours;
-    int minutes;
-    const char *comment;
+    int hours;           ///< Полные часы сна
+    int minutes;         ///< Оставшиеся минуты сна
+    const char *comment; ///< Текстовая оценка качества сна (не управляется пользователем)
 } SleepResult;
 
+/**
+ * @brief Основная функция анализа сна
+ * 
+ * Рассчитывает продолжительность сна на основе входных данных и дает текстовую оценку
+ * его качества. Учитывает случаи сна через полночь.
+ * 
+ * @param data Входные данные о времени сна (SleepData)
+ * @return SleepResult Структура с результатами анализа
+ * 
+ * @note Функция автоматически обрабатывает переход через полночь
+ * @warning Для корректной работы требуется подключенный модуль time_utils.h
+ * 
+ * Пример использования:
+ * @code
+ * SleepData data = {{22, 30}, {6, 45}};
+ * SleepResult result = calculate_sleep(data);
+ * printf("Спали %d часов %d минут: %s\n", 
+ *        result.hours, result.minutes, result.comment);
+ * @endcode
+ */
 SleepResult calculate_sleep(SleepData data);
 
-#endif
+#endif /* SLEEP_LOGIC_H */

@@ -1,0 +1,5 @@
+<map id="SleepData" name="SleepData">
+<area shape="rect" id="Node000001" title="Структура данных о времени сна" alt="" coords="5,108,95,133"/>
+<area shape="rect" id="Node000002" href="$structTime.html" title="Структура для представления времени (часы и минуты)" alt="" coords="23,5,77,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,45,53,108,47,108,47,45"/>
+</map>

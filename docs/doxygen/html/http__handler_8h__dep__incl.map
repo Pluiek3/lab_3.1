@@ -1,0 +1,7 @@
+<map id="include/http_handler.h" name="include/http_handler.h">
+<area shape="rect" id="Node000001" title="Интерфейс обработчика HTTP&#45;запросов для сервиса анализа сна" alt="" coords="59,5,225,31"/>
+<area shape="rect" id="Node000002" href="$http__handler_8c.html" title="Обработчик HTTP&#45;запросов для сервиса анализа сна" alt="" coords="5,79,143,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,42,87,80,83,77,120,39"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Основной файл HTTP&#45;сервера для сервиса анализа сна" alt="" coords="167,79,256,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,39,202,77,198,80,161,43"/>
+</map>

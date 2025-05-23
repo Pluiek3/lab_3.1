@@ -1,0 +1,40 @@
+\doxysection{/home/pluiek/lab/include/time\+\_\+utils.\+h}
+\hypertarget{_2home_2pluiek_2lab_2include_2time_utils_8h-example}{}\label{_2home_2pluiek_2lab_2include_2time_utils_8h-example}Разбирает строку времени в структуру \doxylink{structTime}{Time}.
+
+Разбирает строку времени в структуру \doxylink{structTime}{Time}
+\begin{DoxyParams}{Аргументы}
+{\em time\+\_\+str} & Строка в формате "{}\+HH\+:\+MM"{} (24-\/часовой формат) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Структура \doxylink{structTime}{Time} с разобранными часами и минутами
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Входная строка должна строго соответствовать формату "{}\+HH\+:\+MM"{} 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+Не выполняет валидацию ввода -\/ некорректный ввод приводит к неопределённому поведению
+\end{DoxyWarning}
+\doxylink{structTime}{Time} t = parse\+\_\+time("{}14\+:30"{}); // t будет содержать \{14, 30\}
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef\ TIME\_UTILS\_H}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ TIME\_UTILS\_H}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ hours;\ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ minutes;\ }
+\DoxyCodeLine{\}\ \mbox{\hyperlink{structTime}{Time}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{structTime}{Time}}\ \mbox{\hyperlink{time__utils_8h_a4255bc301d3c9ed72d9772efe1dd13f6}{parse\_time}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *time\_str);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ \mbox{\hyperlink{time__utils_8h_aa0687440185d667a7f05f295db537c7e}{time\_to\_minutes}}(\mbox{\hyperlink{structTime}{Time}}\ t);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{structTime}{Time}}\ \mbox{\hyperlink{time__utils_8h_a982eab0515da786a59115a416b93ee0e}{minutes\_to\_time}}(\textcolor{keywordtype}{int}\ total\_minutes);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ TIME\_UTILS\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCodeInclude}
+ 

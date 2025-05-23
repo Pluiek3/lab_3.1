@@ -1,0 +1,35 @@
+\doxysection{Файл include/http\+\_\+handler.h}
+\hypertarget{http__handler_8h}{}\label{http__handler_8h}\index{include/http\_handler.h@{include/http\_handler.h}}
+
+
+Интерфейс обработчика HTTP-\/запросов для сервиса анализа сна  
+
+
+{\ttfamily \#include "{}../mongoose/mongoose.\+h"{}}\newline
+Граф включаемых заголовочных файлов для http\+\_\+handler.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{http__handler_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{http__handler_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{http__handler_8h_a97af952edacf7d366f958fc993855c48}\label{http__handler_8h_a97af952edacf7d366f958fc993855c48} 
+void {\bfseries handle\+\_\+request} (struct \mbox{\hyperlink{structmg__connection}{mg\+\_\+connection}} \texorpdfstring{$\ast$}{*}c, struct \mbox{\hyperlink{structmg__http__message}{mg\+\_\+http\+\_\+message}} \texorpdfstring{$\ast$}{*}hm)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс обработчика HTTP-\/запросов для сервиса анализа сна 
+
+Предоставляет главную функцию обработки запросов для веб-\/сервера Mongoose, реализующую сервис анализа качества сна. 

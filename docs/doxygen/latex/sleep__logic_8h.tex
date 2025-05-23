@@ -1,0 +1,95 @@
+\doxysection{Файл include/sleep\+\_\+logic.h}
+\hypertarget{sleep__logic_8h}{}\label{sleep__logic_8h}\index{include/sleep\_logic.h@{include/sleep\_logic.h}}
+
+
+Заголовочный файл для модуля анализа сна  
+
+
+{\ttfamily \#include "{}time\+\_\+utils.\+h"{}}\newline
+Граф включаемых заголовочных файлов для sleep\+\_\+logic.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{sleep__logic_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{sleep__logic_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSleepData}{Sleep\+Data}}
+\begin{DoxyCompactList}\small\item\em Структура данных о времени сна \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structSleepResult}{Sleep\+Result}}
+\begin{DoxyCompactList}\small\item\em Структура результатов анализа сна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSleepResult}{Sleep\+Result}} \mbox{\hyperlink{sleep__logic_8h_a4cd4d975103028cddd1dd7272455d37a}{calculate\+\_\+sleep}} (\mbox{\hyperlink{structSleepData}{Sleep\+Data}} data)
+\begin{DoxyCompactList}\small\item\em Основная функция анализа сна \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл для модуля анализа сна 
+
+Модуль предоставляет функции для анализа продолжительности и качества сна на основе времени отхода ко сну и пробуждения. 
+
+\doxysubsection{Функции}
+\Hypertarget{sleep__logic_8h_a4cd4d975103028cddd1dd7272455d37a}\label{sleep__logic_8h_a4cd4d975103028cddd1dd7272455d37a} 
+\index{sleep\_logic.h@{sleep\_logic.h}!calculate\_sleep@{calculate\_sleep}}
+\index{calculate\_sleep@{calculate\_sleep}!sleep\_logic.h@{sleep\_logic.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_sleep()}{calculate\_sleep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSleepResult}{Sleep\+Result}} calculate\+\_\+sleep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSleepData}{Sleep\+Data}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Основная функция анализа сна 
+
+Рассчитывает продолжительность сна на основе входных данных и дает текстовую оценку его качества. Учитывает случаи сна через полночь.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Входные данные о времени сна (\doxylink{structSleepData}{Sleep\+Data}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\doxylink{structSleepResult}{Sleep\+Result} Структура с результатами анализа
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Функция автоматически обрабатывает переход через полночь 
+\end{DoxyNote}
+\begin{DoxyWarning}{Предупреждения}
+Для корректной работы требуется подключенный модуль \doxylink{time__utils_8h}{time\+\_\+utils.\+h}
+\end{DoxyWarning}
+Пример использования\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{structSleepData}{SleepData}}\ data\ =\ \{\{22,\ 30\},\ \{6,\ 45\}\};}
+\DoxyCodeLine{\mbox{\hyperlink{structSleepResult}{SleepResult}}\ result\ =\ \mbox{\hyperlink{sleep__logic_8h_a4cd4d975103028cddd1dd7272455d37a}{calculate\_sleep}}(data);}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}Спали\ \%d\ часов\ \%d\ минут:\ \%s\(\backslash\)n"{}},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ result.\mbox{\hyperlink{structSleepResult_aae1244133424e8b9d0c2b6dfe15d16a1}{hours}},\ result.\mbox{\hyperlink{structSleepResult_afd340fdb47244e30108c125d567ad875}{minutes}},\ result.\mbox{\hyperlink{structSleepResult_a585c476ca9ddefc2c06763597949b0a2}{comment}});}
+
+\end{DoxyCode}
+
+
+Основная функция анализа сна
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Входные данные о времени отхода ко сну и пробуждения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Структура \doxylink{structSleepResult}{Sleep\+Result} с результатами расчета
+\end{DoxyReturn}
+Функция выполняет следующие действия\+:
+\begin{DoxyEnumerate}
+\item Конвертирует время в минуты
+\item Учитывает случай сна через полночь
+\item Вычисляет общую продолжительность сна
+\item Формирует комментарий о качестве сна 
+\end{DoxyEnumerate}

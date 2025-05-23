@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lab_3: Файл src/time_utils.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lab_3<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">UI Web Applications</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл time_utils.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация утилит для работы со временем  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="time__utils_8h_source.html">../include/time_utils.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для time_utils.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="time__utils_8c__incl.png" border="0" usemap="#asrc_2time__utils_8c" alt=""/></div>
+<map name="asrc_2time__utils_8c" id="asrc_2time__utils_8c">
+<area shape="rect" title="Реализация утилит для работы со временем" alt="" coords="165,5,286,31"/>
+<area shape="rect" href="time__utils_8h.html" title="Заголовочный файл утилит для работы со временем" alt="" coords="5,79,168,104"/>
+<area shape="poly" title=" " alt="" coords="204,33,123,75,120,70,202,28"/>
+<area shape="rect" title=" " alt="" coords="192,79,259,104"/>
+<area shape="poly" title=" " alt="" coords="228,31,228,65,223,65,223,31"/>
+<area shape="rect" title=" " alt="" coords="283,79,354,104"/>
+<area shape="poly" title=" " alt="" coords="242,29,294,68,291,72,239,33"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a4255bc301d3c9ed72d9772efe1dd13f6" id="r_a4255bc301d3c9ed72d9772efe1dd13f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTime.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__utils_8c.html#a4255bc301d3c9ed72d9772efe1dd13f6">parse_time</a> (const char *time_str)</td></tr>
+<tr class="memdesc:a4255bc301d3c9ed72d9772efe1dd13f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсит строку времени в формате HH:MM в структуру <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a>.  <br /></td></tr>
+<tr class="separator:a4255bc301d3c9ed72d9772efe1dd13f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0687440185d667a7f05f295db537c7e" id="r_aa0687440185d667a7f05f295db537c7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__utils_8c.html#aa0687440185d667a7f05f295db537c7e">time_to_minutes</a> (<a class="el" href="structTime.html">Time</a> t)</td></tr>
+<tr class="memdesc:aa0687440185d667a7f05f295db537c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конвертирует структуру <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a> в общее количество минут  <br /></td></tr>
+<tr class="separator:aa0687440185d667a7f05f295db537c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982eab0515da786a59115a416b93ee0e" id="r_a982eab0515da786a59115a416b93ee0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTime.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__utils_8c.html#a982eab0515da786a59115a416b93ee0e">minutes_to_time</a> (int total_minutes)</td></tr>
+<tr class="memdesc:a982eab0515da786a59115a416b93ee0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конвертирует минуты в структуру <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a>.  <br /></td></tr>
+<tr class="separator:a982eab0515da786a59115a416b93ee0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация утилит для работы со временем </p>
+<p>Модуль предоставляет функции для конвертации и парсинга времени </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a982eab0515da786a59115a416b93ee0e" name="a982eab0515da786a59115a416b93ee0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982eab0515da786a59115a416b93ee0e">&#9670;&#160;</a></span>minutes_to_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTime.html">Time</a> minutes_to_time </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_minutes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конвертирует минуты в структуру <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">total_minutes</td><td>Общее количество минут </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a> Структура с часами и минутами</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Выполняет нормализацию часов (значение часов будет в диапазоне 0-23)</dd></dl>
+<p>Пример использования: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structTime.html">Time</a> t = <a class="code hl_function" href="time__utils_8h.html#a982eab0515da786a59115a416b93ee0e">minutes_to_time</a>(1470); <span class="comment">// 24*60 + 30</span></div>
+<div class="line">printf(<span class="stringliteral">&quot;%02d:%02d&quot;</span>, t.<a class="code hl_variable" href="structTime.html#aa207ff7d820b4c32f22e1474a931b195">hours</a>, t.<a class="code hl_variable" href="structTime.html#acdca8b13b904057dfec90b68f3092bc4">minutes</a>); <span class="comment">// Выведет &quot;00:30&quot;</span></div>
+<div class="ttc" id="astructTime_html"><div class="ttname"><a href="structTime.html">Time</a></div><div class="ttdoc">Структура для представления времени (часы и минуты)</div><div class="ttdef"><b>Definition</b> time_utils.h:18</div></div>
+<div class="ttc" id="astructTime_html_aa207ff7d820b4c32f22e1474a931b195"><div class="ttname"><a href="structTime.html#aa207ff7d820b4c32f22e1474a931b195">Time::hours</a></div><div class="ttdeci">int hours</div><div class="ttdoc">Часы (0-23)</div><div class="ttdef"><b>Definition</b> time_utils.h:19</div></div>
+<div class="ttc" id="astructTime_html_acdca8b13b904057dfec90b68f3092bc4"><div class="ttname"><a href="structTime.html#acdca8b13b904057dfec90b68f3092bc4">Time::minutes</a></div><div class="ttdeci">int minutes</div><div class="ttdoc">Минуты (0-59)</div><div class="ttdef"><b>Definition</b> time_utils.h:20</div></div>
+<div class="ttc" id="atime__utils_8h_html_a982eab0515da786a59115a416b93ee0e"><div class="ttname"><a href="time__utils_8h.html#a982eab0515da786a59115a416b93ee0e">minutes_to_time</a></div><div class="ttdeci">Time minutes_to_time(int total_minutes)</div><div class="ttdoc">Конвертирует минуты в структуру Time.</div><div class="ttdef"><b>Definition</b> time_utils.c:63</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a4255bc301d3c9ed72d9772efe1dd13f6" name="a4255bc301d3c9ed72d9772efe1dd13f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4255bc301d3c9ed72d9772efe1dd13f6">&#9670;&#160;</a></span>parse_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTime.html">Time</a> parse_time </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>time_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Парсит строку времени в формате HH:MM в структуру <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time_str</td><td>Строка времени в формате "HH:MM" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a> Структура с распарсенным временем</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Не выполняет валидацию формата входной строки </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>При неверном формате строки поведение не определено</dd></dl>
+<p>Пример использования: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structTime.html">Time</a> t = <a class="code hl_function" href="time__utils_8h.html#a4255bc301d3c9ed72d9772efe1dd13f6">parse_time</a>(<span class="stringliteral">&quot;23:45&quot;</span>);</div>
+<div class="line">printf(<span class="stringliteral">&quot;%02d:%02d&quot;</span>, t.<a class="code hl_variable" href="structTime.html#aa207ff7d820b4c32f22e1474a931b195">hours</a>, t.<a class="code hl_variable" href="structTime.html#acdca8b13b904057dfec90b68f3092bc4">minutes</a>); <span class="comment">// Выведет &quot;23:45&quot;</span></div>
+<div class="ttc" id="atime__utils_8h_html_a4255bc301d3c9ed72d9772efe1dd13f6"><div class="ttname"><a href="time__utils_8h.html#a4255bc301d3c9ed72d9772efe1dd13f6">parse_time</a></div><div class="ttdeci">Time parse_time(const char *time_str)</div><div class="ttdoc">Парсит строку времени в формате HH:MM в структуру Time.</div><div class="ttdef"><b>Definition</b> time_utils.c:27</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="aa0687440185d667a7f05f295db537c7e" name="aa0687440185d667a7f05f295db537c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0687440185d667a7f05f295db537c7e">&#9670;&#160;</a></span>time_to_minutes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int time_to_minutes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTime.html">Time</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конвертирует структуру <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a> в общее количество минут </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Структура <a class="el" href="structTime.html" title="Структура для представления времени (часы и минуты)">Time</a> для конвертации </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>int Общее количество минут (часы * 60 + минуты)</dd></dl>
+<p>Пример использования: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structTime.html">Time</a> t = {8, 30};</div>
+<div class="line"><span class="keywordtype">int</span> mins = <a class="code hl_function" href="time__utils_8h.html#aa0687440185d667a7f05f295db537c7e">time_to_minutes</a>(t); <span class="comment">// Вернет 510</span></div>
+<div class="ttc" id="atime__utils_8h_html_aa0687440185d667a7f05f295db537c7e"><div class="ttname"><a href="time__utils_8h.html#aa0687440185d667a7f05f295db537c7e">time_to_minutes</a></div><div class="ttdeci">int time_to_minutes(Time t)</div><div class="ttdoc">Конвертирует структуру Time в общее количество минут</div><div class="ttdef"><b>Definition</b> time_utils.c:45</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

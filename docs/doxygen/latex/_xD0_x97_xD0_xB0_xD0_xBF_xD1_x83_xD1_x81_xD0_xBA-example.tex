@@ -1,0 +1,23 @@
+\doxysection{Запуск}
+\hypertarget{_xD0_x97_xD0_xB0_xD0_xBF_xD1_x83_xD1_x81_xD0_xBA-example}{}\label{_xD0_x97_xD0_xB0_xD0_xBF_xD1_x83_xD1_x81_xD0_xBA-example}Точка входа в программу
+
+Точка входа в программу \begin{DoxyReturn}{Возвращает}
+0 при успешном завершении, 1 при ошибке
+\end{DoxyReturn}
+Запускает HTTP-\/сервер на порту 8000 с обработкой запросов\+:
+\begin{DoxyEnumerate}
+\item Инициализирует менеджер соединений Mongoose
+\item Настраивает прослушивание порта
+\item Запускает бесконечный цикл обработки событий
+\item По завершении освобождает ресурсы
+\end{DoxyEnumerate}
+
+\begin{DoxyNote}{Заметки}
+Для завершения сервера требуется прерывание (Ctrl+C)
+\end{DoxyNote}
+сервера\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./sleep\_server}
+\DoxyCodeLine{Server\ running\ on\ http:\textcolor{comment}{//localhost:8000}}
+
+\end{DoxyCode}

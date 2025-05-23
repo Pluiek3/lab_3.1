@@ -1,0 +1,9 @@
+<map id="src/sleep_logic.c" name="src/sleep_logic.c">
+<area shape="rect" id="Node000001" title="Реализация логики расчета сна" alt="" coords="98,5,227,31"/>
+<area shape="rect" id="Node000002" href="$sleep__logic_8h.html" title="Заголовочный файл для модуля анализа сна" alt="" coords="5,79,176,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,33,114,71,110,67,149,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="201,79,269,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,29,215,67,211,71,173,33"/>
+<area shape="rect" id="Node000003" href="$time__utils_8h.html" title="Заголовочный файл утилит для работы со временем" alt="" coords="41,152,140,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,104,93,138,88,138,88,104"/>
+</map>
