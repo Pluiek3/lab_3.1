@@ -1,52 +1,36 @@
-# Lab_2
+# Lab_3
 
-Subject: Development of a library for operations on matrices of the tool software in Linux OS using.
+Subject: Developing a simple UI web application in C using the Mongoose library.
 
-Objective of the work: To study methods of implementing operations on matrices in the C language, using development tools in the Linux OS; to master the practices of debugging program code using gdb, the Doxygen source code documentation system, as well as the principles of preparing autotests to check the correctness of the library functions using the CUnit framework; to understand the basic principles of using the distributed git version control system.
+Objective of the work: Learn the principles of creating simple web interfaces using the C programming language and the Mongoose library; master the processing of HTTP requests, data transfer via HTML forms and the implementation of basic user interaction logic; gain basic HTML/CSS skills as part of a UI application, and ensure the launch and maintenance of a web application in the Linux OS environment.
 
 The purpose of the work determines the formulation and solution of the following tasks:
-1. Familiarization with the implementation features of basic operations on matrices (creation,
-input / output, addition, multiplication, transposition, finding the determinant).
-2. Reinforcing skills in using mechanisms for working with pointers and
-dynamic memory allocation in the C language for matrices.
-3. Setting up an automated Makefile build.
-4. Setting up a version control system using git.
-- 4.1 Creating a repository for the project.
-- 4.2 Basic operations for working with code versions.
-- 4.3 Designing a README file describing the functionality of the library for
-github.com.
-5. Mastering code debugging tools using gdb.
-- 5.1 Working with breakpoints in critical parts of the code.
-- 5.2 Step-by-step tracing of program execution.
-- 5.3. Analysis of variable values ​​during execution.
-6. Analysis of the correctness of the program code using the tools cppcheck, clang-analyzer,
-valgrind.
-7. Preparation of autotests to check the correctness of the library using the CUnit framework.
-8. Performing code markup using Doxygen, generating documentation.
-9. Performing an individual task related to calculating expressions with
-dynamic matrices, using the developed library. The task number
-is determined by the student's number in the journal. If the number exceeds the maximum number of
-tasks, the variant is calculated using the formula: journal number % maximum task number (where % is the remainder of the division).
-10. Reflect in the report:
-- a) description of the structure of the developed library;
-- b) texts of the library and tests with comments;
-- c) prepared test data and results;
-- d) other materials related to the progress of the work;
-- e) conclusions on the correctness and effectiveness of the implementation.
+
+1. Introduction to the basics of developing UI applications in C using the Mongoose library.
+2. Studying the principles of processing HTTP requests (GET and POST) and organizing routing within an application.
+3. Implementing a user authorization form with receiving and analyzing data transmitted from an HTML form.
+4. Connecting and using static resources (HTML, CSS) as part of a C program.
+5. Setting up automated project build using Makefile.
+6. Working with environment variables for storing confidential data (username and password).
+7. Analyzing application behavior with different types of user input and processing conditions (successful authorization, incorrect input, missing environment variables).
+8. Implementation of the basic logic of the web application with the return of the corresponding pages and HTTP response codes.
+9. Testing the functionality of the application in the Linux OS environment using a browser and command line utilities (for example, curl or wget).
+10. Completing an individual assignment. The assignment number is determined by the student's number in the journal. If the number exceeds the maximum number of assignments, the variant is calculated using the formula: journal number % maximum assignment number (where % is the remainder of the division). 
+11. Prepare documentation for the project and upload the project to a remote git repository.
 
 ## Compiling
 
 Command to compile and run:
 
 ```
-make run
-```
-### Running the tests
-
-Command to run tests:
+make
 
 ```
-make test
+Go to the bin directory and start the server with the command:
+
+```
+./sleep_server
+
 ```
 
 ## Documentation 
@@ -64,7 +48,7 @@ The documentation itself is located in (./Docs/doxygen), this documentation cont
 
 | Command | Description |
 | --- | --- |
-| `Just do it` |To begin the Lab_2 work|
+| `Just do it` |To begin the Lab_3 work|
 | `sudo apt install doxygen` | Generate Doxygen documentation |
 | `sudo apt install libcunit1 libcunit1-dev` | CUnit tests |
 |`sudo apt-get install clang-format`| Code format |
