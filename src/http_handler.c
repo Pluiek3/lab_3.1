@@ -23,8 +23,9 @@
  *
  * @note Сравнение выполняется побайтово без учета регистра
  */
-static bool uri_matches(const struct mg_str *uri, const char *pattern) {
-    size_t n = strlen(pattern);
+static bool uri_matches(const struct mg_str *uri, 
+                        const char *pattern) {
+                        size_t n = strlen(pattern);
     return uri->len == n && memcmp(uri->buf, pattern, n) == 0;
 }
 
@@ -66,8 +67,10 @@ void handle_request(struct mg_connection *c,
     else if (uri_matches(&hm->uri, "/calculate")) {
         char bedtime[16] = {0}, waketime[16] = {0};
         
-        mg_http_get_var(&hm->query, "bedtime", bedtime, sizeof(bedtime));
-        mg_http_get_var(&hm->query, "waketime", waketime, sizeof(waketime));
+        mg_http_get_var(&hm->query, "bedtime", 
+                        bedtime,  sizeof(bedtime));
+        mg_http_get_var(&hm->query, "waketime", 
+                        waketime, sizeof(waketime));
         
         if (bedtime[0] && waketime[0]) {
             SleepData data = {

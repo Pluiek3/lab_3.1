@@ -50,7 +50,6 @@ The documentation itself is located in (./Docs/doxygen), this documentation cont
 | --- | --- |
 | `Just do it` |To begin the Lab_3 work|
 | `sudo apt install doxygen` | Generate Doxygen documentation |
-| `sudo apt install libcunit1 libcunit1-dev` | CUnit tests |
 |`sudo apt-get install clang-format`| Code format |
 
 
