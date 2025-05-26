@@ -38,8 +38,8 @@ static bool uri_matches(const struct mg_str *uri,
  * @warning Файл должен существовать и быть доступным для чтения
  */
 static void send_file_response(struct mg_connection *c, 
-                              struct mg_http_message *hm, 
-                              const char *path) {
+                               struct mg_http_message *hm, 
+                               const char *path) {
     struct mg_http_serve_opts opts = {0};
     mg_http_serve_file(c, hm, path, &opts);
 }
@@ -59,7 +59,7 @@ static void send_file_response(struct mg_connection *c,
  *
  */
 void handle_request(struct mg_connection *c, 
-                   struct mg_http_message *hm) {
+                    struct mg_http_message *hm) {
     if (uri_matches(&hm->uri, "/")) {
         send_file_response(c, hm, "templates/sleep.html");
     } 
