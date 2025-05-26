@@ -4,13 +4,16 @@
  */
 
 #include "../mongoose/mongoose.h"
+#include "include/routing.h"
 #include "include/http_handler.h"
 #include <stdio.h>
 #include <stdbool.h>
 
 static void fn(struct mg_connection *c, int ev, void *ev_data) {
     if (ev == MG_EV_HTTP_MSG) {
-        handle_request(c, (struct mg_http_message *)ev_data);
+        if (!route_request(c, (struct mg_http_message *)ev_data)) {
+            mg_http_reply(c, 404, NULL, "Not Found");
+        }
     }
 }
 
@@ -26,7 +29,6 @@ int main() {
     printf("Сервер запущен на http://localhost:8000\n");
     printf("Для выключения сервера отправьте запрос на /shutdown\n");
     
-    // Основной цикл обработки событий с проверкой флага
     while (server_running) {
         mg_mgr_poll(&mgr, 1000);
     }

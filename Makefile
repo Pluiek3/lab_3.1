@@ -9,7 +9,7 @@ else
     CFLAGS += $(RELEASE_CFLAGS)
 endif
 
-SRC = src/main.c src/http_handler.c src/sleep_logic.c src/time_utils.c
+SRC = src/main.c src/http_handler.c src/sleep_logic.c src/time_utils.c src/routing.c
 OBJ = $(SRC:.c=.o)
 DEP = $(SRC:.c=.d)
 

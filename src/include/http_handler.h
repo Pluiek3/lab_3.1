@@ -8,13 +8,18 @@
 
 #include "../mongoose/mongoose.h"
 
-// Добавляем флаг для управления состоянием сервера
-extern volatile bool server_running;
 
 /**
- * @brief Основная функция обработки HTTP-запросов
+ * @brief Обрабатывает запрос на расчет сна
  */
-void handle_request(struct mg_connection *c, 
-                   struct mg_http_message *hm);
+void handle_calculation(struct mg_connection *c, 
+                       struct mg_http_message *hm);
+
+/**
+ * @brief Отправляет файл в ответ на HTTP-запрос
+ */
+void send_file_response(struct mg_connection *c, 
+                       struct mg_http_message *hm, 
+                       const char *path);
 
 #endif /* HTTP_HANDLER_H */
