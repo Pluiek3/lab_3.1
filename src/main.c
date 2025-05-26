@@ -1,75 +1,37 @@
 /**
  * @file main.c
  * @brief Основной файл HTTP-сервера для сервиса анализа сна
- * @mainpage Калькулятор сна 
- *
- * Калькулятор сна:
- * 1. Пользователь вводит время отхода ко сну и время пробуждения.
- * 2. Сервер вычисляет продолжительность сна и дает рекомендации 
- * (например, "Вы спали 7 часов 30 минут. Нормально, но можно лучше").
- * 
  */
 
 #include "../mongoose/mongoose.h"
-#include "../include/http_handler.h"
+#include "include/http_handler.h"
 #include <stdio.h>
 #include <stdbool.h>
 
-/**
- * @brief Функция-обработчик событий Mongoose
- * @param c Подключение, для которого произошло событие
- * @param ev Тип события (MG_EV_*)
- * @param ev_data Данные события
- *
- * Обрабатывает HTTP-запросы, перенаправляя их в основной обработчик.
- * В текущей реализации обрабатывает только события HTTP-запросов.
- */
-static void fn(struct mg_connection *c, 
-               int ev, 
-               void *ev_data) {
+static void fn(struct mg_connection *c, int ev, void *ev_data) {
     if (ev == MG_EV_HTTP_MSG) {
         handle_request(c, (struct mg_http_message *)ev_data);
     }
 }
 
-/**
- * @brief Точка входа в программу
- * @return 0 при успешном завершении, 1 при ошибке
- *
- * Запускает HTTP-сервер на порту 8000 с обработкой запросов:
- * 1. Инициализирует менеджер соединений Mongoose
- * 2. Настраивает прослушивание порта
- * 3. Запускает бесконечный цикл обработки событий
- * 4. По завершении освобождает ресурсы
- *
- * @note Для завершения сервера требуется прерывание (Ctrl+C)
- *
- * @example Запуск сервера:
- * @code
- * ./sleep_server
- * Server running on http://localhost:8000
- * @endcode
- */
 int main() {
     struct mg_mgr mgr;
-    
-    // Инициализация менеджера соединений Mongoose
     mg_mgr_init(&mgr);
     
-    // Прослушивание порта 8000 на всех интерфейсах
     if (!mg_http_listen(&mgr, "http://0.0.0.0:8000", fn, NULL)) {
         fprintf(stderr, "Ошибка запуска сервера\n");
-        return 1; // Завершение с ошибкой
+        return 1;
     }
     
     printf("Сервер запущен на http://localhost:8000\n");
+    printf("Для выключения сервера отправьте запрос на /shutdown\n");
     
-    // Основной цикл обработки событий
-    while (true) {
-        mg_mgr_poll(&mgr, 1000); // Таймаут 1000 мс между проверками
+    // Основной цикл обработки событий с проверкой флага
+    while (server_running) {
+        mg_mgr_poll(&mgr, 1000);
     }
     
-    // Освобождение ресурсов (недостижимый код в текущей реализации)
+    printf("Сервер завершает работу...\n");
     mg_mgr_free(&mgr);
     return 0;
 }

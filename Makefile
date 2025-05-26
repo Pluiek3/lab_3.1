@@ -19,7 +19,7 @@ MG_LIB = $(MG_PATH)/libmongoose.a
 
 TARGET = bin/sleep_server
 
-RESOURCES = css/styles.css templates/sleep.html
+RESOURCES = templates/css/styles.css templates/sleep.html
 
 all: $(TARGET) copy-resources
 
@@ -44,7 +44,7 @@ $(MG_OBJ): $(MG_PATH)/mongoose.c $(MG_PATH)/mongoose.h
 
 copy-resources: $(RESOURCES)
 	@mkdir -p bin/css bin/templates
-	@cp -f css/styles.css bin/css/
+	@cp -f templates/css/styles.css bin/css/
 	@cp -f templates/sleep.html bin/templates/
 
 clean:

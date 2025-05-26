@@ -3,7 +3,7 @@
  * @brief Реализация логики расчета сна
  */
 
-#include "../include/sleep_logic.h"
+#include "include/sleep_logic.h"
 #include <math.h>
 
 /**

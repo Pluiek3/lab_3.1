@@ -5,7 +5,7 @@
  * Модуль предоставляет функции для конвертации и парсинга времени
  */
 
-#include "../include/time_utils.h"
+#include "include/time_utils.h"
 #include <stdio.h>
 #include <stdlib.h>
 
